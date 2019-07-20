@@ -1,20 +1,23 @@
 Model rules
-	The Railroad Commuter calculate the total distance for a path between 2 or more connected Towns from the railroad network.
+	The Railroad Commuter calculates the total distance for a path between 2 or more connected Towns from the railroad network.
 	The Railroad Network is a set of Towns connected by Routes.
 	A Town is represented by a graph Node.
 	A Route is represented by a graph Edge.
 	The railroad network is represented by a directed graph of Nodes and Edges.
-	Each Route have a distance represented by the Edge weighting.
-	The distance value cannot be zero o negative.
+	Each Route has a distance represented by the Edge weighting.
+	The distance value cannot be zero or negative.
 	A Town can have multiple outgoing Routes to other Towns.
 	A Town can have multiple incoming Routes from other Towns.
 	A Town CANNOT have a Route to itself.
 	A possible path WILL NOT contains repeated Routes.
-	A route between two towns (A to B) with a distance of 5 is represented as AB5. 
+	A Town is identified by its name. The name can be any capital letter [A-Z].
+	A Route is identified by its name. 
+	The name of a Route consists of two capital letters. Origin town + Target town. 
+	A route between two towns (from A to B) with a distance of 5 is represented as AB5. 
 
 
 Acceptance criteria
-	The desired Route is represented by a dash separated Town names, for example A-C-B. 
+	The desired Route is represented by a dash separated Town names, for example: A-B, D-C-E. 
 	If there is no possible path between the Towns the output should be 'NO SUCH ROUTE'.
 	A path between two Towns must be direct (no Town stops are allowed).
 	
